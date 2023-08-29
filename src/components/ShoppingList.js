@@ -1,7 +1,15 @@
 import React from "react";
+import React,  {useState} from "react";
 import Item from "./Item";
 
 function ShoppingList({ items }) {
+  const [itemText, setItem] = useState("");
+  const handleSubmit=(e)=>{
+    console.log(items);
+  };
+
+
+
   return (
     <div className="ShoppingList">
       <div className="Filter">
